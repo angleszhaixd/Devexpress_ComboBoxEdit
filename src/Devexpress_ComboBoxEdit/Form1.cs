@@ -112,7 +112,7 @@ namespace Devexpress_ComboBoxEdit
                 string str = cmbox.Text.ToString();
                 listMessages.Items.Add(string.Format("ButtonClick事件触发，当前输入的内容：{0}。", str));
                 //cmbox.ClosePopup();
-                cmbox.Properties.Items.Clear();//无论有没有过滤，都要清空原来的值
+                cmbox.Properties.Items.Clear();//清空原来的值
                 cmbox.Properties.Items.AddRange(cmbDefaultBindSource);
                 cmbox.ShowPopup();
                 isMatch = false;
@@ -142,7 +142,7 @@ namespace Devexpress_ComboBoxEdit
             {
                 List<object> bindSource = new List<object>();
                 cmbox.ClosePopup();
-                cmbox.Properties.Items.Clear();//无论有没有过滤，都要清空原来的值
+                cmbox.Properties.Items.Clear();//清空原来的值
                 isMatch = false;
                 if (string.IsNullOrWhiteSpace(str))
                 {
