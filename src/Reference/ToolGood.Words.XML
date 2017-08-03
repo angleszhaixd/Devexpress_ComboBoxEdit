@@ -1,0 +1,364 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ToolGood.Words</name>
+    </assembly>
+    <members>
+        <member name="P:ToolGood.Words.IllegalWordsSearchResult.Success">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.IllegalWordsSearchResult.Start">
+            <summary>
+            开始位置
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.IllegalWordsSearchResult.End">
+            <summary>
+            结束位置
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.IllegalWordsSearchResult.SrcString">
+            <summary>
+            原始文本
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.IllegalWordsSearchResult.Keyword">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="T:ToolGood.Words.IllegalWordsSearchEx">
+            <summary>
+            支持重复词、
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.IllegalWordsSearchEx.TreeNode.Failure">
+            <summary>
+            Failure function - descendant node
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.IllegalWordsSearchEx.TreeNode.Transitions">
+            <summary>
+            Transition function - list of descendant nodes
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.IllegalWordsSearchEx.TreeNode.Results">
+            <summary>
+            Returns list of patterns ending by this letter
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.IllegalWordsSearchEx.TrieNode.IsRepeat">
+            <summary>
+            是否为重复节点
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.IllegalWordsSearchEx.TrieNode.Parent">
+            <summary>
+            上一级
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.IllegalWordsSearchEx.TrieNode.LastMatchLocation">
+            <summary>
+            最后匹配位置
+            </summary>
+        </member>
+        <member name="M:ToolGood.Words.NumberConventer.HandlePart(System.String)">
+            <summary>
+            处理亿以下内容。
+            </summary>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.NumberConventer.GetArabDotPart(System.String)">
+            <summary>
+            取得阿拉伯数字小数部分。
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.NumberConventer.switchNum(System.String)">
+            <summary>
+            取得汉字对应的阿拉伯数字
+            </summary>
+            <param name="n"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ToolGood.Words.PinYinSearchResult.Keyword">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.PinYinSearchResult.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="F:ToolGood.Words.PinYinSearchType.PinYin">
+            <summary>
+            拼音
+            </summary>
+        </member>
+        <member name="F:ToolGood.Words.PinYinSearchType.AllPinYin">
+            <summary>
+            全拼音
+            </summary>
+        </member>
+        <member name="M:ToolGood.Words.PinYinSearch.SetKeywords(System.Collections.Generic.List{System.String})">
+            <summary>
+            设置关键字
+            </summary>
+            <param name="keywords">关键字</param>
+        </member>
+        <member name="M:ToolGood.Words.PinYinSearch.SetKeywords(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Int32})">
+            <summary>
+            设置关键字和IDs
+            </summary>
+            <param name="keywords">关键字</param>
+            <param name="ids">IDs</param>
+        </member>
+        <member name="M:ToolGood.Words.PinYinSearch.SearchTexts(System.String,System.Boolean)">
+            <summary>
+            搜索关键字
+            </summary>
+            <param name="text">文本</param>
+            <param name="keywordSort">是否按拼音排序</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ToolGood.Words.PinYinSearch.SearchIds(System.String,System.Boolean)" -->
+        <member name="M:ToolGood.Words.PinYinSearch.SearchTextWithIds(System.String,System.Boolean)">
+            <summary>
+            搜索关键字和IDs
+            </summary>
+            <param name="text">文本</param>
+            <param name="keywordSort">是否按拼音排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.PinYinSearch.PickTexts(System.String,System.Boolean,System.Int32)">
+            <summary>
+            挑选关键字，关键字在指定长度内，最前显示
+            </summary>
+            <param name="text">文本</param>
+            <param name="keywordSort">是否按拼音排序</param>
+            <param name="pickLength">挑选长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.PinYinSearch.PickTextWithIds(System.String,System.Boolean,System.Int32)">
+            <summary>
+            挑选关键字和IDs，关键字在指定长度内，最前显示
+            </summary>
+            <param name="text">文本</param>
+            <param name="keywordSort">是否按拼音排序</param>
+            <param name="pickLength">挑选长度</param>
+            <returns></returns>
+        </member>
+        <member name="T:ToolGood.Words.PinYinSearchEx">
+            <summary>
+            PinYinSearch增强版，占用内存更小，
+            经测试28W个关键字，总字数147W，内存使用36M，输出文件34.1M。
+            原PinYinSearch测试时，内存使用700M以上。
+            
+            使用SaveFile、LoadFile可快速设置关键字。
+            
+            
+            </summary>
+        </member>
+        <member name="M:ToolGood.Words.PinYinSearchEx.SetKeywords(System.Collections.Generic.List{System.String})">
+            <summary>
+            设置关键字
+            </summary>
+            <param name="keywords">关键字</param>
+        </member>
+        <member name="M:ToolGood.Words.PinYinSearchEx.SetKeywords(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Int32})">
+            <summary>
+            设置关键字和IDs
+            </summary>
+            <param name="keywords">关键字</param>
+            <param name="ids">IDs</param>
+        </member>
+        <member name="M:ToolGood.Words.PinYinSearchEx.SearchTexts(System.String,System.Boolean)">
+            <summary>
+            搜索关键字
+            </summary>
+            <param name="text">文本</param>
+            <param name="keywordSort">是否按拼音排序</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ToolGood.Words.PinYinSearchEx.SearchIds(System.String,System.Boolean)" -->
+        <member name="M:ToolGood.Words.PinYinSearchEx.SearchTextWithIds(System.String,System.Boolean)">
+            <summary>
+            搜索关键字和IDs
+            </summary>
+            <param name="text">文本</param>
+            <param name="keywordSort">是否按拼音排序</param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.PinYinSearchEx.PickTexts(System.String,System.Boolean,System.Int32)">
+            <summary>
+            挑选关键字，关键字在指定长度内，最前显示
+            </summary>
+            <param name="text">文本</param>
+            <param name="keywordSort">是否按拼音排序</param>
+            <param name="pickLength">挑选长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.PinYinSearchEx.PickTextWithIds(System.String,System.Boolean,System.Int32)">
+            <summary>
+            挑选关键字和IDs，关键字在指定长度内，最前显示
+            </summary>
+            <param name="text">文本</param>
+            <param name="keywordSort">是否按拼音排序</param>
+            <param name="pickLength">挑选长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.PinYinSearchEx.SaveFile(System.String)">
+            <summary>
+            保存文件
+            </summary>
+            <param name="filePath"></param>
+        </member>
+        <member name="M:ToolGood.Words.PinYinSearchEx.LoadFile(System.String)">
+            <summary>
+            加载文件
+            </summary>
+            <param name="filePath"></param>
+        </member>
+        <member name="P:ToolGood.Words.WordsSearchResult.Success">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.WordsSearchResult.Start">
+            <summary>
+            开始位置
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.WordsSearchResult.End">
+            <summary>
+            结束位置
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.WordsSearchResult.Keyword">
+            <summary>
+            关键字
+            </summary>
+        </member>
+        <member name="P:ToolGood.Words.WordsSearchResult.Index">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="T:ToolGood.Words.WordsSearch">
+            <summary>
+            带返回位置
+            </summary>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.GetFirstPinYin(System.String)">
+            <summary>
+            获取首字母
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.GetPinYinFast(System.String)">
+            <summary>
+            获取拼音全拼  不支持多音
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.GetPinYin(System.String)">
+            <summary>
+            获取拼音全拼 支持多音
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.GetAllPinYin(System.Char)">
+            <summary>
+            获取所有拼音
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.ToSenseIllegalWords(System.String)">
+            <summary>
+            转成 侦测字符串
+            1、转小写;2、全角转半角; 3、相似文字修改；4、繁体转简体
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.HasChinese(System.String)">
+            <summary>
+            判断输入是否为中文  
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.IsAllChinese(System.String)">
+            <summary>
+            判断输入是否全为中文  
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.HasEnglish(System.String)">
+            <summary>
+            判断含有英语
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.IsAllEnglish(System.String)">
+            <summary>
+            判断是否全部英语
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.ToSBC(System.String)">
+            <summary>
+            半角转全角
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.ToDBC(System.String)">
+            <summary>
+            转半角的函数
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.ToTraditionalChinese(System.String)">
+            <summary>
+            转繁体中文
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.ToSimplifiedChinese(System.String)">
+            <summary>
+            转简体中文
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.ToChineseRMB(System.Double)">
+            <summary>
+            数字转中文大写
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ToolGood.Words.WordsHelper.ToNumber(System.String)">
+             <summary>
+             中文转数字（支持中文大写）
+            
+             </summary>
+             <param name="chineseString"></param>
+             <returns></returns>
+        </member>
+    </members>
+</doc>
