@@ -13,7 +13,7 @@ namespace Devexpress_ComboBoxEdit
     /// <summary>
     /// CommboxEditor过滤设置（支持中文、拼音、五笔过滤）
     /// author:zhaixd
-    /// date:2017.08.02
+    /// date:2017.08.03
     /// </summary>
     public partial class Form1 : Form
     {

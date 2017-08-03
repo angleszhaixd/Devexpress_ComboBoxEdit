@@ -12,7 +12,7 @@ namespace Devexpress_ComboBoxEdit
     /// <summary>
     /// 汉子转五笔工具类 
     /// author:zhaixd
-    /// date:2017.08.02
+    /// date:2017.08.03
     /// </summary>
     public class WBTranslationHelper
     {
